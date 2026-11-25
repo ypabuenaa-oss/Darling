@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Una carta para ti ❤️</title>
+<style>
+:root{
+  --bg:#fff1f3;--card:#ffffff;--ink:#3b2a30;--muted:#8a6b74;--rose:#e0456b;--rose2:#ff7a98;--line:#f3d3da;--soft:#ffe3e9;--no:#6b5b75;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#21141a;--card:#2e1d25;--ink:#f7e6ea;--muted:#c9a2ae;--line:#4a2d38;--soft:#3d2430;--no:#b9a3c4}
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.7;-webkit-text-size-adjust:100%}
+.wrap{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px 22px;box-shadow:0 8px 24px rgba(224,69,107,.12)}
+.heart{text-align:center;font-size:42px}
+h1{font-size:1.5rem;text-align:center;margin:.2em 0 1em;color:var(--rose)}
+.card p{margin:0 0 1em;font-size:1.05rem}
+.sign{font-style:italic;color:var(--muted)}
+.ps{border-top:1px dashed var(--line);padding-top:1em;margin-top:1.2em;color:var(--muted)}
+.ask{text-align:center;margin:32px 0 16px;font-size:1.5rem;color:var(--rose);font-weight:bold}
+.btns{display:flex;gap:12px}
+button{font:inherit;font-family:system-ui,sans-serif;border:0;border-radius:999px;padding:14px 10px;font-size:1.05rem;font-weight:700;cursor:pointer;flex:1;min-height:52px;-webkit-tap-highlight-color:transparent}
+.yes{background:linear-gradient(135deg,var(--rose),var(--rose2));color:#fff}
+.nob{background:var(--no);color:#fff}
+button:active{transform:scale(.97)}
+button[disabled]{opacity:.6}
+.box{display:none;margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.box.open{display:block}
+.box label{display:block;font-family:system-ui,sans-serif;font-size:.95rem;color:var(--muted);margin-bottom:6px}
+input,textarea{width:100%;font:inherit;font-family:system-ui,sans-serif;font-size:1rem;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px}
+textarea{min-height:100px;resize:vertical}
+.send{width:100%;background:var(--rose);color:#fff}
+.note{font-family:system-ui,sans-serif;font-size:.85rem;color:var(--muted);margin:10px 0 0;text-align:center}
+h2{font-family:system-ui,sans-serif;font-size:1.05rem;margin:34px 0 12px}
+.c{display:flex;gap:10px;margin-bottom:14px;font-family:system-ui,sans-serif}
+.av{flex:none;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px}
+.av.si{background:var(--soft)}.av.no{background:#e6dcec}
+.bub{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 14px;min-width:0;flex:1}
+.who{font-weight:700;font-size:.95rem}
+.tag{font-size:.75rem;font-weight:700;border-radius:999px;padding:2px 8px;margin-left:6px;color:#fff}
+.tag.si{background:var(--rose)}.tag.no{background:var(--no)}
+.when{font-size:.75rem;color:var(--muted)}
+.txt{margin-top:4px;white-space:pre-wrap;overflow-wrap:anywhere}
+.empty{color:var(--muted);text-align:center;font-family:system-ui,sans-serif;font-size:.95rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="heart">💌</div>
+    <h1>Una carta para ti</h1>
+    <p>Querido Darling, amor mío</p>
+    <p>Hay muchas cosas por las que quiero pedirte perdón. No sé muy bien por dónde empezar, porque son tantas las cosas que quisiera decirte y tantas las que a veces no sé cómo expresar.</p>
+    <p>Sé que a veces puedo ser insoportable, complicado y difícil de entender. También sé que no siempre tengo las mejores actitudes y que, en ocasiones, termino diciendo cosas que no debería.</p>
+    <p>Quiero que sepas que muchas veces mi miedo a perderte me hace actuar de maneras que ni yo mismo entiendo. A veces mis inseguridades hablan por mí y termino diciendo cosas que realmente no siento. Y aunque eso no justifica mis actitudes, quiero que entiendas que jamás ha sido mi intención hacerte sentir mal.</p>
+    <p>Perdóname por las palabras que dije sin pensar, por mis momentos de mal humor, por mis actitudes groseras y por las veces en las que no supe demostrarte lo mucho que me importas.</p>
+    <p>Honestamente, siento muchísimas cosas por ti. Hay sentimientos que me cuesta explicar y que ni siquiera sé cómo expresar. Me importas más de lo que probablemente imaginas y, aunque a veces no sepa demostrarlo correctamente, eso no significa que no sea sincero.</p>
+    <p>Perdóname por no saber comunicarme, por guardarme cosas y por permitir que mis miedos se interpongan entre nosotros. No quiero que mis errores terminen opacando todo lo bonito que siento por ti.</p>
+    <p>No pretendo que olvides lo sucedido de un momento a otro. Sé que las disculpas no borran lo que pasó, pero sí quiero que sepas que reconozco mis errores y que me gustaría aprender a hacer las cosas mejor.</p>
+    <p>Me gustaría seguir compartiendo momentos contigo, seguir conociéndote, molestarte un poquito, hacerte reír y tener la oportunidad de demostrarte que también puedo hacer las cosas bien.</p>
+    <p>No quiero obligarte a sentir nada ni a darme una oportunidad que no quieras darme. Solamente quería que supieras todo esto, porque mereces una disculpa sincera y porque hay sentimientos que simplemente no quiero seguir guardándome.</p>
+    <p>Te quiero muchísimo, Darling. ❤️</p>
+    <p class="sign">Con cariño, alguien que espera poder hacerlo mejor.</p>
+    <p class="ps">P.D. Después de semejante testamento, espero que al menos me concedas el derecho a una audiencia para defenderme. JAJAJAJA. 🥹😈</p>
+  </div>
+
+  <div class="ask">¿Me perdonas? 🥹</div>
+  <div class="btns">
+    <button class="yes" id="bYes" type="button">Siiii</button>
+    <button class="nob" id="bNo" type="button">Nooo</button>
+  </div>
+
+  <div class="box" id="box">
+    <label for="nombre">Tu nombre</label>
+    <input id="nombre" maxlength="40" placeholder="Darling" autocomplete="off">
+    <label for="razon" id="lblRazon"></label>
+    <textarea id="razon" maxlength="600" placeholder="Escribe aquí..."></textarea>
+    <button class="send" id="bSend" type="button">Publicar comentario</button>
+    <p class="note" id="note"></p>
+  </div>
+
+  <h2>💬 Comentarios</h2>
+  <div id="list"><p class="empty">Aún no hay comentarios.</p></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+// ====== PEGA AQUÍ TU CONFIGURACIÓN DE FIREBASE ======
+var firebaseConfig = {
+  apiKey: "PEGA_AQUI",
+  authDomain: "PEGA_AQUI",
+  projectId: "PEGA_AQUI",
+  storageBucket: "PEGA_AQUI",
+  messagingSenderId: "PEGA_AQUI",
+  appId: "PEGA_AQUI"
+};
+// =====================================================
+(function(){
+  var tipo=null, col=null, local=[];
+  var $=function(i){return document.getElementById(i)};
+  var box=$("box"), note=$("note");
+
+  try{
+    if(firebaseConfig.apiKey!=="PEGA_AQUI"){
+      firebase.initializeApp(firebaseConfig);
+      col=firebase.firestore().collection("comentarios");
+    }
+  }catch(e){}
+
+  function open(t){
+    tipo=t; box.classList.add("open");
+    $("lblRazon").textContent = t==="si" ? "¿Por qué me perdonas? 🥹" : "¿Por qué no me perdonas?";
+    $("razon").focus();
+    box.scrollIntoView({behavior:"smooth",block:"center"});
+  }
+  $("bYes").addEventListener("click",function(){open("si")});
+  $("bNo").addEventListener("click",function(){open("no")});
+
+  function fecha(ts){
+    try{return new Date(ts).toLocaleString("es-CO",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}catch(e){return ""}
+  }
+
+  function render(items){
+    var list=$("list"); list.textContent="";
+    if(!items.length){var p=document.createElement("p");p.className="empty";p.textContent="Aún no hay comentarios.";list.appendChild(p);return}
+    items.forEach(function(d){
+      var c=document.createElement("div");c.className="c";
+      var av=document.createElement("div");av.className="av "+(d.tipo==="si"?"si":"no");av.textContent=d.tipo==="si"?"🥰":"💔";
+      var b=document.createElement("div");b.className="bub";
+      var who=document.createElement("div");
+      var n=document.createElement("span");n.className="who";n.textContent=d.nombre||"Darling";
+      var tg=document.createElement("span");tg.className="tag "+(d.tipo==="si"?"si":"no");tg.textContent=d.tipo==="si"?"Sí":"No";
+      var w=document.createElement("span");w.className="when";w.textContent=" · "+fecha(d.ts);
+      who.appendChild(n);who.appendChild(tg);who.appendChild(w);
+      var t=document.createElement("div");t.className="txt";t.textContent=d.texto||"";
+      b.appendChild(who);b.appendChild(t);c.appendChild(av);c.appendChild(b);list.appendChild(c);
+    });
+  }
+
+  $("bSend").addEventListener("click",async function(){
+    var texto=$("razon").value.trim();
+    if(!tipo){note.textContent="Primero elige Siiii o Nooo 🙂";return}
+    if(!texto){note.textContent="Escribe tu razón antes de publicar.";return}
+    var item={tipo:tipo,texto:texto,nombre:$("nombre").value.trim()||"Darling",ts:Date.now()};
+    var btn=$("bSend");btn.disabled=true;note.textContent="";
+    try{
+      if(!col) throw new Error("sin-db");
+      await col.add(item);
+      $("razon").value="";box.classList.remove("open");tipo=null;
+    }catch(e){
+      local.unshift(item);render(local);
+      note.textContent="No pude guardarlo en el servidor; solo se ve en este dispositivo.";
+      $("razon").value="";
+    }
+    btn.disabled=false;
+  });
+
+  if(col){
+    col.orderBy("ts","desc").limit(200).onSnapshot(function(snap){
+      render(snap.docs.map(function(d){return d.data()}));
+    },function(){});
+  }
+})();
+</script>
+</body>
+</html>
